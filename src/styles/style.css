@@ -1,0 +1,132 @@
+.main__container{
+    background-color: var(--dark-blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__container__login{
+    width: 80%;
+    background-color: var(--blue-transparent);
+    height: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form__container__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.form__container__login > h2{
+    font-size: 2.188rem;
+    color: var(--white);
+    font-weight: 700;
+    text-shadow: var(--outline)
+
+}
+.form__container__login > input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--main-blue);
+    font-weight: 400;
+    font-size: 0.938rem;
+}
+.form__container__login > input::placeholder{
+    color: var(--light-grey);
+}
+.form__container__login > button{
+    border-radius: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 50px;
+}
+
+
+.main__container__cadastro{
+    width: 80%;
+    background-color: var(--blue-transparent);
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form__container__cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.form__container__cadastro > h2{
+    font-size: 2.188rem;
+    color: var(--white);
+    font-weight: 700;
+    text-shadow: var(--outline)
+}
+
+.form__container__cadastro > input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--main-blue);
+    font-weight: 400;
+    font-size: 0.938rem;
+}
+
+.form__container__cadastro > input::placeholder{
+    color: var(--light-grey);
+}
+
+.form__container__cadastro > button{
+    border-radius: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 50px;
+}
+
+@media (min-width: 1024px) {
+    .main__container{
+        flex-direction: row;
+    }
+
+    .main__container__login{
+        width: 30%;
+        height: 30%;
+
+    }
+
+    .main__container__cadastro{
+        width: 40%;
+        height: 50%;
+    }
+
+    .form__container__cadastro{
+        gap: 1.5rem
+    }
+}

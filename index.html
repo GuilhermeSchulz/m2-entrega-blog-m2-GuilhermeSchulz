@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/style.css">
   <title>m2-entrega-blog-m2</title>
 </head>
 <body>
-  
+  <main class="main__container">
+    <div class="main__container__cadastro">
+      <form class="form__container__cadastro">
+        <h2>Cadastro</h2>
+
+        <input type="text" name="nomeCadastro" placeholder="Nome do Usuário">
+
+        <input type="email" name="emailCadastro" placeholder="Email">
+
+        <input type="text" name="imagemCadastro" placeholder="Foto de perfil">
+
+        <input type="password" name="senhaCadastro" placeholder="Senha">
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <div class="main__container__login">
+      <form class="form__container__login">
+        <h2>Entrar</h2>
+
+        <input type="email" name="emailLogin" placeholder="Email">
+
+        <input type="password" name="senhaLogin" placeholder="Senha">
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
