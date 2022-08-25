@@ -1,0 +1,31 @@
+body, main, div, form, h1, h2, h3, p, button, input{
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'Inter', sans-serif;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #1E1E1E;
+    --light-grey:#C3C3C3;
+    --main-blue: #6495ED;
+    --dark-blue:#454D6B;
+    --blue-transparent: #6495EDBF;
+    --purple: #5C5D8D;
+    --red: #FF3F5B;
+    --outline:     -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+}
