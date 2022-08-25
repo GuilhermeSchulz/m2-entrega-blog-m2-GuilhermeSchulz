@@ -245,7 +245,9 @@ body{
 .container__opacity{
     opacity: 0.1;
 }
-
+.modal__hidden{
+    display: none;
+}
 @media (min-width: 1024px){
     .container__main__div{
         width: 60%;
@@ -285,5 +287,7 @@ body{
     .container__edit__modal{
         max-width: 430px;
     }
-
+    .container__delete__modal{
+        max-width: 430px;
+    }
 }
