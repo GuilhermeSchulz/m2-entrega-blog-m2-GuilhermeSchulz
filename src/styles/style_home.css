@@ -310,5 +310,6 @@ body{
     }
     .container__main__card div > section > p{
         height: 90px;
+        width: 375px;
     }
 }
