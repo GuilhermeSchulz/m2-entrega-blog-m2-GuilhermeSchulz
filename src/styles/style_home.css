@@ -147,6 +147,7 @@ body{
     gap: 1rem;
     max-width: 70%;
     max-height: 90%;
+    width: 90%;
 }
 .container__main__card div > section > h2{
     font-size: 1.5rem;
@@ -159,7 +160,7 @@ body{
     font-weight: 400;
     max-height: 200px;
     overflow-y: auto;
-    overflow:scroll;
+    overflow-x:hidden;
 }
 
 .container__main__card div > section > span{
@@ -310,6 +311,6 @@ body{
     }
     .container__main__card div > section > p{
         height: 90px;
-        width: 375px;
+        width: 90%;
     }
 }
