@@ -9,6 +9,7 @@ class HomePage {
         await Api.buscarUser(token, id)
     }
     static logOut(){
+        localStorage.clear()
         window.location.href = "../../index.html"
     }
     static async createPosts(){
