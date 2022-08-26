@@ -1,3 +1,5 @@
+import { PostMaker } from "./postMaker.js";
+
 export class Api {
     static baseUrl = "https://blog-m2.herokuapp.com";
 
@@ -42,12 +44,34 @@ export class Api {
 
     };    
 
-    static async buscarUser(id){
-
+    static async buscarUser(token, id){
+        const user = await fetch(`${this.baseUrl}/users/${id}`,{
+            method: "GET",
+            headers:{
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            }
+        })
+        .then((res) => res.json())
+        .then((res) => {
+            
+            PostMaker.makeHeader(res)
+        })
+        .catch((err) => console.log(err))
     };
 
-    static async buscarPostagem(){
-
+    static async buscarPostagem(token){
+        const posts = await fetch(`${this.baseUrl}/posts?page=1`,{
+            method: "GET",
+            headers:{
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
+            }
+        })
+        .then(res => res.json())
+        .then(res => res)
+        .catch(err => console.log(err))
+        return posts
     };
 
     static async buscarPostagemId(id){
