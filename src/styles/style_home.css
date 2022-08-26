@@ -25,6 +25,7 @@ body{
 .container__header__imagem{
     width: 65px;
     height: 65px;
+    border-radius: 50px;
 }
 
 .container__header__name{
@@ -42,6 +43,7 @@ body{
     color: var(--white);
     font-weight: 700;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 
@@ -95,6 +97,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .container__main__form > button::after{
     content: "+"
@@ -107,6 +110,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+}
+.container__main__card{
+    width: 90%;
 }
 .container__main__card > div{
     width: 100%;
@@ -121,6 +127,10 @@ body{
 }
 .container__main__card div > img{
     order:1;
+    border-radius: 50px;
+    max-height: 70px;
+    width: 70px;
+    object-fit: cover;
 }
 .container__main__card div > div{
     order:3;
@@ -134,7 +144,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
+    max-width: 70%;
+    max-height: 90%;
 }
 .container__main__card div > section > h2{
     font-size: 1.5rem;
@@ -145,6 +157,9 @@ body{
     font-size: 0.938rem;
     color: var(--dark-blue);
     font-weight: 400;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow:scroll;
 }
 
 .container__main__card div > section > span{
@@ -207,6 +222,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .container__delete__modal{
     width: 80%;
@@ -241,6 +257,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .container__opacity{
     opacity: 0.1;
@@ -269,6 +286,7 @@ body{
     .container__main__card > div{
         flex-wrap: wrap;
         max-height: 200px;
+        align-items: stretch;
     }
     .container__main__card > div > img{
         height: 110px;
@@ -278,7 +296,7 @@ body{
     }
     .container__main__card > div > section{
         order: 3;
-        max-width: 70%;
+        max-width: 80%;
         align-items: normal;
     }
     .container__main__card > div > section > span{
@@ -289,5 +307,8 @@ body{
     }
     .container__delete__modal{
         max-width: 430px;
+    }
+    .container__main__card div > section > p{
+        height: 90px;
     }
 }
