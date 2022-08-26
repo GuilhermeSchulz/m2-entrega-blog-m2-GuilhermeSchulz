@@ -291,6 +291,9 @@ body{
     }
     .container__main__card > div > img{
         height: 110px;
+        max-height: 110px;
+        width: 110px;
+        border-radius: 100px;
     }
     .container__main__card > div > div{
         order: 2;
