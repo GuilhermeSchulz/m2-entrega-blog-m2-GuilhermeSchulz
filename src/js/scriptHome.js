@@ -129,14 +129,12 @@ class Render{
                 imgButtonEdit.addEventListener("click", (event) => {
                     let editModal = document.getElementsByClassName("container__edit__modal")[0];
                     editModal.classList.remove("modal__hidden");
-                    editModal.classList.add("modal__block");
                     HomePage.buttonEditPost(element.id);
                 })
 
                 imgButtonDelete.addEventListener("click", (event) => {
                     let editModal = document.getElementsByClassName("container__delete__modal")[0];
                     editModal.classList.remove("modal__hidden");
-                    editModal.classList.add("modal__block");
                     HomePage.buttonDeletePost(element.id);
                 })
 

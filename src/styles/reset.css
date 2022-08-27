@@ -8,6 +8,7 @@ body, main, div, form, h1, h2, h3, p, button, section, input, header, img, ul, l
 	vertical-align: baseline;
 	box-sizing: border-box;
     list-style: none;
+    border: none;
 }
 
 
@@ -21,12 +22,12 @@ body, main, div, form, h1, h2, h3, p, button, section, input, header, img, ul, l
     --blue-transparent: #6495EDBF;
     --purple: #5C5D8D;
     --red: #FF3F5B;
-    --outline:     -1px -1px 0 #000,
-     0   -1px 0 #000,
-     1px -1px 0 #000,
-     1px  0   0 #000,
-     1px  1px 0 #000,
-     0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
+    --outline:      -1px -1px 0 #000,
+                     0   -1px 0 #000,
+                     1px -1px 0 #000,
+                     1px  0   0 #000,
+                     1px  1px 0 #000,
+                     0    1px 0 #000,
+                    -1px  1px 0 #000,
+                    -1px  0   0 #000;
 }
