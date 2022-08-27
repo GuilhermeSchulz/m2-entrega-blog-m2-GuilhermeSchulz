@@ -1,5 +1,3 @@
-import { PostMaker } from "./postMaker.js";
-
 export class Api {
     static baseUrl = "https://blog-m2.herokuapp.com";
 
@@ -53,11 +51,9 @@ export class Api {
             }
         })
         .then((res) => res.json())
-        .then((res) => {
-            
-            PostMaker.makeHeader(res)
-        })
+        .then((res) => res)
         .catch((err) => console.log(err))
+        return user
     };
 
     static async buscarPostagem(token){
@@ -79,14 +75,47 @@ export class Api {
     };
 
     static async criarPost(data){
-
+        const post = await fetch(`${this.baseUrl}/posts`,{
+            method: "POST",
+            headers:{
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${localStorage["token@blogKenzie"]}`
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(res => res)
+        .catch(err => console.log(err))
+        return post;
     };
 
-    static async modificarPost(id){
-
+    static async modificarPost(id, data){
+        const body = {
+            content: data
+        }
+        const patch = await fetch(`${this.baseUrl}/posts/${id}`,{
+            method: "PATCH",
+            headers:{
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${localStorage["token@blogKenzie"]}`
+            },
+            body: JSON.stringify(body)
+        })
+        .then(res => res.json())
+        .then(res => res)
+        .catch(err => console.log(err))
+        return patch;
     };
 
     static async deletarPost(id){
-
+        await fetch(`${this.baseUrl}/posts/${id}`,{
+            method: "DELETE",
+            headers:{
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${localStorage["token@blogKenzie"]}`
+            }
+        })
+        .then(res => res)
+        .catch(err => console.log(err))
     };
 }

@@ -266,6 +266,11 @@ body{
 .modal__hidden{
     display: none;
 }
+
+.modal__block{
+    display: block;
+}
+
 @media (min-width: 1024px){
     .container__main__div{
         width: 60%;

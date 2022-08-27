@@ -24,24 +24,24 @@
     <main class="container__main">
         <div class="container__main__div">
             <form class="container__main__form">
-                <input type="text" name="post" placeholder="No que está pensando?">
-                <button type="submit"></button>
+                <input type="text" name="newPost" placeholder="No que está pensando?">
+                <button id="btnCreatePost" type="submit"></button>
             </form>
         </div>
         <ul class="container__main__ul">
             
         </ul>
     </main>
-                <div class="container__edit__modal modal__hidden">
+            <div class="container__edit__modal modal__hidden">
                 <h2>Editar</h2>
                 <form>
-                    <textarea placeholder="Estou mudando meu comentário"></textarea>
-                    <button>Enviar</button>
+                    <textarea id="textareaEditPost" placeholder="Estou mudando meu comentário"></textarea>
+                    <button id="btnTextareaEditPost">Enviar</button>
                 </form>
             </div>
             <div class="container__delete__modal modal__hidden">
                 <h2>Deseja Deletar este post?</h2>
-                <button>Deletar</button>
+                <button id="btnDeletePostCheck">Deletar</button>
             </div>
     <script type="module" src="../js/scriptHome.js"></script>
 </body>
